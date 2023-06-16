@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;    
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 600;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+input{
+    background-color: #F8F6F4;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: underline;
+}
+li:hover{
+    text-decoration: underline;
+}
+span{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+/* header */
+header{
+    width: 100%;
+    font-weight: 600;
+    background-color: #101010;
+    color: #fff;
+}
+.header-div{
+    height: 100%;
+}
+
+.head-line{
+    display: flex;
+    border-bottom: 1px rgba(150, 150, 150, 0.36) solid;
+    padding: 0 1.5rem;
+    height: 25px;
+    align-items: center;
+
+}
+.head-line-txt{
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.head-nav{
+    display: flex;
+    justify-content: center;
+    padding: 13px 0;
+    align-items: center;
+}
+.head-nav-options{
+    display: flex;
+    margin-left: 25%;
+}
+
+.head-nav-prof{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: -webkit-fill-available;
+}
+.head-nav-prof-icon{
+    border: #333 2px solid;
+    border-radius: 25px;
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
+.head-nav-prof-opt{
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* navigation */
+.head-nav-table{
+    display: flex;
+    height: 100%;
+}
+.head-nav-ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.head-nav-item{
+    margin-right: 60px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.head-nav-item:hover{
+    text-decoration: underline;
+}
+.active{
+    text-decoration: underline;
+}
+
+
+
+/* main */
+
+.main-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* main head img */
+.main-head{
+    width: 100%;
+    height: 400px;
+    box-shadow: 1px -2px 64px 15px rgba(0,0,0,0.71) inset;
+    background-image: url(https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwe5ff82b0/TAG_Heuer_Carrera/WBN2311.BA0001/WBN2311.BA0001_USP1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-head h1{
+    font-size: 80px;
+}
+.main-head h2{
+    font-size: 30px;
+}
+.main-head h1, .main-head h2{
+    text-shadow: 2px 3px 20px rgba(0,0,0,0.65);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.collections{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 50px 0;
+}
+.col-h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.col-items{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.col-item{
+    width: 50%;
+    background-color: #F8F6F4;
+    margin: 10px 15px;
+    box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.75);
+}
+.col-img{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.col-img img{
+    transform: scale(1);
+    transition: .4s transform;
+}
+.col-item:hover > .col-img img{
+    transform: scale(1.1);
+}
+.col-cont{
+    width: 100%;
+    padding: 30px 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 16px;
+}
+.col-cont span{
+    font-size: 10px;
+}
+
+
+/* after coll cont */
+.ac-cont{
+    margin: 100px 0;
+    width: 100%;
+    height: 770px;
+
+    background-image: url(https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw8daa0961/TAG_Heuer_Link/WBC2110.BA0603/WBC2110.BA0603_1000.png?impolicy=resizeTrim&width=884&height=1106);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-color: #101010;
+    box-shadow: 2px 2px 220px 62px rgba(0,0,0,0.75) inset;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ac-text{
+    margin-top: 80px;
+    width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-shadow: 2px 2px 10px #101010;
+}
+.ac-text h1{
+    margin-bottom: 10px;
+}
+.ac-div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+}
+.ac-div-items{
+    width: 100%;
+    display: flex;
+}
+.ac-div-item{
+    width: 350px;
+    height: 250px;
+    margin-right: 20px;
+    box-shadow: 0px 2px 19px 10px rgba(0,0,0,0.75);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 10;
+}
+.ac-img-div{
+    width: 100%;
+    height: 100%;
+}
+.ac-item-img{
+    width: inherit;
+    transform: scale(1);
+    transition: all .4s;
+    z-index: 5;
+}
+.ac-div-item:hover > .ac-item-img{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.ac-div-item h4, .ac-div-item h6{
+    position: relative;
+    bottom: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 10px #101010;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.ac-div-item h6{
+    letter-spacing: 2px;
+}
+.ac-div-item h6:hover{
+    text-decoration: underline;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #101010;
+}
+.footer-cont{
+    display: flex;
+    justify-content: center;
+}
+.footer-div{ 
+    width: 20%;
+    margin-top: 30px;
+}  
+.footer-div h4{
+    letter-spacing: 2px;
+}
+.footer-div span{
+    margin-top: 10px;
+    font-weight: 300;
+}
+.footer-col{
+    list-style-type: none;
+
+} 
+.footer-col-item{
+    text-transform: uppercase;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 15px 15px;
+}
+
+
+
+
+
+
+/* about page */
+.ab-head{
+    width: 100%;
+    height: 600px;
+    box-shadow: 1px -2px 64px 15px rgba(0,0,0,0.71) inset;
+    background-image: url(https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw53f35822/TAG_Heuer_Carrera/CBS2210.FC6534/CBS2210.FC6534_USP1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ab-head h1{
+    font-size: 80px;
+}
+.ab-head h2{
+    font-size: 30px;
+}
+.ab-head h1, .ab-head h2{
+    text-shadow: 2px 3px 20px rgba(0,0,0,0.65);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ab-cont{
+    margin: 50px 400px;
+}
+.ab-cont h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.ab-div{
+    display: flex;
+}
+.ab-div-img{
+    /* width: 100%; */
+
+    /* background-image: url(https://content.rolex.com/v7/dam/collection/watches-grid/beautyshot-cards/m126603-0001/m126603-0001_v01.jpg?imwidth=640); */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 55px 30px rgba(0,0,0,0.75) inset;
+    
+}
+.ab-div p{
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: large;
+    margin: 10px 0;
+}
+.ab-text-div{
+    display: flex;
+    flex-direction: column;
+}
+.ab-text-div a{
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
