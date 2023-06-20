@@ -1,18 +1,9 @@
-import { useContext, useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineShoppingCart,HiSearch } from "react-icons/hi";
-import { properties } from "./Context";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
-    const { loader, setLoader } = useContext(properties);
-    const [lineX, setLineX] = useState(false);
 
-    const burgerwiThLoader = () => {
-        setLoader(!loader)
-        document.querySelector('.navigation > ul').classList.toggle('openNav')
-        setLineX(!lineX);
-    }
 
         return(
             <header>
@@ -26,10 +17,10 @@ export default function Header() {
                         <div className='head-nav-table'>
                             <nav className="navigation">
                                 <ul className='head-nav-ul'>
-                                    <li className='head-nav-item' onClick={burgerwiThLoader}><NavLink to="/">Home</NavLink></li>
-                                    <li className='head-nav-item' onClick={burgerwiThLoader}><NavLink to="/about">About us</NavLink></li>
-                                    <li className='head-nav-item'>Timex</li>
-                                    <li className='head-nav-item'>Higer</li>
+                                    <li className='head-nav-item'><NavLink to="/">Home</NavLink></li>
+                                    <li className='head-nav-item'><NavLink to="/about">About us</NavLink></li>
+                                    <li className='head-nav-item'><NavLink to="/collections">Collections</NavLink></li>
+                                    
                                 </ul>
                             </nav>
                         </div>  

@@ -4,6 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Home from './Home';
 import About from '../pages/About';
+import Collections from '../pages/Collections';
 import { useState } from 'react';
 import { properties } from './Context';
 
@@ -26,6 +27,7 @@ function App() {
 
                     <Route path='/' element={<Home />}></Route>
                     <Route path='/about' element={<About />}></Route>
+                    <Route path='/collections' element={<Collections />}></Route>
 
                 </Routes>
                 <Footer /> 

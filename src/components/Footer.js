@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaFacebookF,FaInstagram,FaTwitter,FaYoutube } from 'react-icons/fa';
+import { NavLink } from "react-router-dom";
 
 class Footer extends React.Component{
     render(){
@@ -12,14 +14,20 @@ class Footer extends React.Component{
                     <div className='footer-div'>
                         <h4>Collections</h4>
                         <ul className='footer-col'>
-                            <li className='footer-col-item'>Rolex</li>
-                            <li className='footer-col-item'>Casio</li>
-                            <li className='footer-col-item'>Timex</li>
-                            <li className='footer-col-item'>Higer</li>
+                            <li className='footer-col-item'><NavLink to="/collections">Carrera</NavLink></li>
+                            <li className='footer-col-item'><NavLink to="/collections">Formulla</NavLink></li>
+                            <li className='footer-col-item'><NavLink to="/collections">Monaco</NavLink></li>
+                            <li className='footer-col-item'><NavLink to="/collections">Autavia</NavLink></li>
                         </ul>
                     </div>
                     <div className='footer-div'>
                         <h4>About us</h4>
+                        <ul className='footer-col '>
+                            <li className='footer-col-item ftc-logo'><FaFacebookF /></li>
+                            <li className='footer-col-item ftc-logo'><FaInstagram /></li>
+                            <li className='footer-col-item ftc-logo'><FaTwitter /></li>
+                            <li className='footer-col-item ftc-logo'><FaYoutube /></li>
+                        </ul>
                     </div>
                     <div className='footer-div'>
                         <h4>Locations</h4>
